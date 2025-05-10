@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover img {
+            transform: scale(1.2);
+        }
+
+        .projects h2 {
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            justify-content: center;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .project a {
+            color: #03a9f4;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="utkarsh.png" alt="Profile">
+            <h1>Utkarsh Kushwaha</h1>
+            <div class="social-icons">
+                <a href="https://github.com/utkarshkushwaha09" target="_blank">
+                    <img src="github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/utkarsh-kushwaha-49437a258" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/sanchitnegi177/" target="_blank">
+                  <img src="instagram.png" alt="Instagram">
+              </a>
+            </div>
+        </div>
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+              <div class="project">
+                <a href="https://github.com/utkarshkushwaha09/music_player/tree/master" target="_blank">Offline Music Player App</a>
+                <p>Android application that retrieves audio files from storage and plays them The app includes features such as play, pause, next, and previous functions, background play.</p>
+            </div>
+                <div class="project">
+                    <a href="https://drive.google.com/drive/folders/1J0cxMDhUogDhC3egBNDzQBah0zXidvQp?usp=sharing" target="_blank">Brain Tumor Detection</a>
+                    <p>An automated system that uses convolutional neural networks to accurately detect brain tumors from MRI scans.</p>
+                </div>
+                <div class="project">
+                    <a href="https://drive.google.com/drive/folders/1NLWjXXiC9aghZvwcx8gdP8PNl6sA87Il?usp=sharing target="_blank">Movie Recommendation System </a>
+                    <p>An automated system that uses Natural language processing to recommend movies based upon the name of the movie you entered.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
